@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-    }
-    h3 {
-        font-size: 30px;
-    }
-    button {
-        width: 60px;
-        font-size: 18px;
-    }
-}
 body{
     background-color: #1F2937;
 }
@@ -30,24 +16,15 @@ body{
 
 h1{
     font-size: 40px;
-    font-family: karla;
-    font-weight: extra-bold;
-    width: 354px;
-    height: 80px;
-    position: fixed; /* Keep the header fixed at the top*/
-    z-index: 1000; /* Make sure the header stays above other elements */
+    font-weight: 700;
+    margin: 0;
 
 }
 #first{
     color: white;
-    width: 100%; /*Ensure the header spans full width */
-    top: 200px;
-    
 }
 #second{
     color: #4ADF86;
-    width: 100%; /*Ensure the header spans full width */
-    top: 250px;
 }
 p{
     margin-bottom: 300px;
@@ -55,11 +32,18 @@ p{
     font-size: 20px;
     color: #D5D4D8;
 }
-
-button{
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+}
+button {
     width: 191px;
-    height:42px ;
+    height: 42px;
     color: white;
     background-color: #10B981;
     border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 3px 3px 5px #1F2937;
+    border: none;
+    cursor: pointer;
 }
