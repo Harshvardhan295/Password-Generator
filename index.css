@@ -4,46 +4,91 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #1F2937;
-}
-.container{
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
+    align-items: center; 
     height: 100vh;
 }
 
-h1{
-    font-size: 40px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Increased max width of the container */
+    padding: 40px; /* Increased padding for more space around the content */
+    background-color: #2D3748; 
+    border: 3px solid #10B981; 
+    border-radius: 12px; 
+}
+
+h1 {
+    font-size: 50px; 
     font-weight: 700;
     margin: 0;
-
 }
-#first{
+
+#first {
     color: white;
 }
-#second{
+
+#second {
     color: #4ADF86;
 }
-p{
-    margin-bottom: 300px;
-    font-family: Inter;
-    font-size: 20px;
+
+p {
+    margin-bottom: 30px; 
+    font-size: 24px; 
     color: #D5D4D8;
 }
-.button-container {
-    display: flex;
-    justify-content: flex-start; 
-}
-button {
-    width: 191px;
-    height: 42px;
+
+#generate-button {
+    width: 250px; 
+    height: 50px; 
     color: white;
     background-color: #10B981;
-    border-radius: 6px;
-    font-size: 16px;
+    border-radius: 8px; 
+    font-size: 18px; 
     box-shadow: 3px 3px 5px #1F2937;
     border: none;
     cursor: pointer;
+    margin-top: 30px; /* Added more space between the text and button */
+    margin-bottom: 30px; /* Added more space between the button and password inputs */
+}
+
+hr.separator {
+    border: 0;
+    height: 2px; 
+    background-color: #2F3E53; 
+    width: 100%;
+    margin: 30px 0; /* Added more space above and below the line */
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px; 
+}
+
+.password-box {
+    width: 45%;
+    height: 50px; 
+    border: 1px solid #D5D4D8;
+    background-color: #2D3748;
+    color: white;
+    text-align: center;
+    font-size: 18px; 
+    border-radius: 8px; 
 }
